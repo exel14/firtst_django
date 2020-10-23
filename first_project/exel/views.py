@@ -11,18 +11,18 @@ def count_bulls(answer,guess):
     bulls = 0
     i = 0
     while i < len(guess):
-        i = i + 1
         if guess[i] == answer[i]:
             bulls =+1
+            i = i + 1
     return bulls
 
 def count_cows(answer,guess):
     cows = 0
     i = 0
     while i < len(guess):
-        i = i + 1
         if guess in answer:
             cows =+1
+            i = i + 1
     return cows
 
 def result(request):
